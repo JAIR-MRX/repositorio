@@ -62,67 +62,63 @@
 
 ## 📂 **Estructura del Proyecto**
 
-/repositio                                               # Carpeta principal del proyecto         
-├── /bootstrap                                           # Carpeta de principal de bootstrap          
-│   └── /dist                                            # Carpeta donde se encuentran el css y js compilados de bootstrap
-|       ├── /css
-│       |   └── bootstrap.min.css                        # css de bootstrap
+/repositorio                         # Carpeta principal del proyecto
+├── /bootstrap                       # Archivos de Bootstrap
+│   └── /dist                        # Archivos compilados de CSS y JS
+│       ├── /css
+│       │   └── bootstrap.min.css    # CSS de Bootstrap
 │       └── /js
-│           └── bootstrap.bundle.min.js                  # js de bootstrap
-├── /css                                      
-│       └── style.css                                    #css principal del proyecto
+│           └── bootstrap.bundle.min.js # JS de Bootstrap
+├── /css
+│   └── style.css                    # CSS principal del proyecto
 ├── /src
-│   ├── /archivos                                        #aca se encuentran todas las imagenes de las portadas de cada tesina
-|   ├── /controlador                                     #Carpeta del controlador
-|   |    ├── /configuracion
-│   |    |    ├── /img                                   #Carpeta que almacena los logos y banners
-|   |    |    ├── config.php                             #Configuracion del sistema para actualizar logos e imagenes
-│   |    |    └── constantes.php       #este archivo almacenas las constantes php para acceder a ella desde cualquier lugar del proyecto
-|   |    ├── /correo                                     #Carpeta de archivos para mandar correo
-│   |    |    ├── /vendor
-│   |    |    |   └── autoload.php                     # Dependencias de Composer 
-|   |    |    ├── composer.json                        # Archivo de configuración de Composer  
-│   |    |    ├── composer.lock
-│   |    |    ├── correo.php                             #archivo para mandar un correo con PHPMAILER
-│   |    |    └── plantilla.php                          #plantilla de correo
-|   |    ├── download.php                                #archivo que se encarga de descargar tesina
-|   |    ├── editardatos.php                             #archivo para actualizar datos de tesinas
-|   |    ├── eliminarArchivo.php                         #archivo para eliminar tesina             
-│   |    └── guardarArchivo.php                          #archivo para guardar tesinas
-|   ├── /img                    # carpeta que almacena las imagenes del footer
-|   ├── /modelo
-|   |    ├── bdrepositorio.sql   # Modelos de la base de datos 
-│   |    └── conexion.php        # Conexion a la base de datos
-|   ├── /plugins
-|   |    └── /pdfjs             # pdfjs para la lectura de pdf en linea
-|   |        ├── /build
-│   |        |   └── pdf.mjs
-|   |        └── /web
-│   |            ├── documet.pdf
-│   |            ├── viewer.css
-│   |            └── viewer.html
-|   ├── /tesinas                                          # carpeta que alamcena todas las tesinas
-|   └── /vista
-│       ├── /admin                  # carpeta que alamcena todas las vistas del administrador
-│       |    ├── config.php
-│       |    ├── home.php
-│       |    └── index.php
-│       ├── /utils                   # carpeta que alamcena componentes que se pueden usar desde cualquier lugar del proyecto
-│       |    ├── modalagregar.php
-│       |    ├── modalCerrarsesion.php
-│       |    ├── modalEditar.php
-│       |    ├── modalEliminar.php
-│       |    ├── modalCerrarsesion.php
-│       |    ├── modalLeer.php
-│       |    └── modalVerTesis.php
-│       ├── filtros.php  # componente de la vista de los filtros
-│       ├── footer.php   # footer de la EPCLE
-│       ├── header.php   # header de la EPCLE
-│       ├── headerEPCLE.php
-│       ├── repoEPCLE.php        # pagina de aterrizaje del repositorio de la EPCLE
-│       ├── resultados.php       # Archivo principal de los resultado de las tesis dependiendo de la busqueda de us
-│       └── style.css                                   
-└── index.php                    # Archivo principal del proyecto
+│   ├── /archivos                    # Imágenes de las portadas de cada tesina
+│   ├── /controlador                 # Lógica de control del sistema
+│   │   ├── /configuracion           # Configuración del sistema
+│   │   │   ├── /img                 # Logos y banners
+│   │   │   ├── config.php           # Archivo de configuración
+│   │   │   └── constantes.php       # Constantes globales de PHP
+│   │   ├── /correo                  # Funciones para envío de correos
+│   │   │   ├── /vendor              # Dependencias de Composer
+│   │   │   ├── composer.json        # Configuración de Composer
+│   │   │   ├── correo.php           # Archivo para envío de correos
+│   │   │   └── plantilla.php        # Plantilla de correo
+│   │   ├── download.php             # Descargar tesinas
+│   │   ├── editardatos.php          # Editar datos de las tesinas
+│   │   ├── eliminarArchivo.php      # Eliminar archivos
+│   │   └── guardarArchivo.php       # Guardar nuevas tesinas
+│   ├── /img                         # Imágenes del footer
+│   ├── /modelo                      # Modelo de la base de datos
+│   │   ├── bdrepositorio.sql        # Estructura de la base de datos
+│   │   └── conexion.php             # Conexión a la base de datos
+│   ├── /plugins
+│   │   └── /pdfjs                   # Visualizador de PDF
+│   │       ├── /build
+│   │       │   └── pdf.mjs
+│   │       └── /web
+│   │           ├── document.pdf
+│   │           ├── viewer.css
+│   │           └── viewer.html
+│   ├── /tesinas                     # Tesinas subidas al sistema
+│   └── /vista                       # Vistas del sistema
+│       ├── /admin                   # Vistas del administrador
+│       │   ├── config.php
+│       │   ├── home.php
+│       │   └── index.php
+│       ├── /utils                   # Componentes reutilizables
+│       │   ├── modalAgregar.php
+│       │   ├── modalCerrarSesion.php
+│       │   ├── modalEditar.php
+│       │   ├── modalEliminar.php
+│       │   └── modalVerTesis.php
+│       ├── filtros.php              # Filtros para búsquedas
+│       ├── footer.php               # Footer del sistema
+│       ├── header.php               # Header del sistema
+│       ├── headerEPCLE.php          # Header personalizado
+│       ├── repoEPCLE.php            # Página principal del repositorio
+│       └── resultados.php           # Resultados de búsquedas
+└── index.php                        # Entrada principal del sistema
+
 
 
 
