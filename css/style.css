@@ -1,0 +1,316 @@
+.instituciones li{
+    display: inline-block;
+    padding: 24px;
+    font-size: inherit;
+  }
+  
+header {
+  position: relative;  
+  height: 102px; 
+}
+
+#header-img-container {
+  position: absolute;
+  top: 0; 
+  left: 80px; 
+  height:100px; 
+}
+
+#header-img {
+  height: auto; 
+  width: 100%; 
+  display: block; 
+  
+}
+.card-custom {
+  width: 225px; 
+  height: 290px;
+  display: flex;
+  flex-direction: column; 
+  overflow: hidden; 
+  align-items: center;
+  margin: auto; 
+  border-radius: 10px;
+}
+
+.card-custom img {
+  height: 200px; 
+  width: 200px; 
+  border-radius: 10px;
+}
+
+
+.card-custom:hover {
+  transform: scale(1.1); 
+}
+
+.card-custom .card-body {
+  flex: 1; 
+  overflow: hidden; 
+  text-align: center; 
+}
+
+.nav-link{
+  color: #ffff; 
+}
+.nav-link:hover{
+  color: #D2A92D;
+}
+
+
+.texto1{
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+ul{
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+
+}
+
+
+.contenedor .menu-footer .nav-footer li a{
+color: white;
+margin: 10px;
+font-size: 14px;
+
+}
+.contenedor .menu-footer .nav-footer{
+justify-content: flex-start;
+padding-left: 90px;
+padding-top: 20px;
+width: 75%;
+}
+
+ul.nav-footer li {
+  display: inline-block;
+  padding-right: 15px;
+}
+.contenedor .custom, .unach{
+color: white;
+font-size: 14px;
+padding-left: 100px;
+width: 75%;
+}
+
+footer {
+background-color: #18386B;
+height: 190px;
+position: relative;
+border-bottom: #D2A92D solid 18px;
+bottom: 0px;
+}
+
+.logo-footer {
+width: 25%;
+float: right;
+padding-right: .625rem;
+padding-left: .625rem;
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(75%, -50%);
+text-align: center;
+
+}
+
+img {
+display: inline-block;
+vertical-align: middle;
+max-width: 100%;
+height: auto;
+}
+
+.vrow {
+color: #18386b;
+background-color: white;
+font-size: 14px;
+font-weight: bold;
+padding: 9px 24px;
+}
+.vrowd {
+color: #fad701;
+border: solid 2px white;
+padding: 7px 27px;
+margin-left: -3px;
+background-color: #18386b;
+}
+.vrow, .vrowd {
+display: inline-block;
+}
+.vstats_counter{
+background-color: white;
+display: block;
+float: right;
+position: absolute;
+top: 70%;
+left: 60%;
+
+}
+hr{
+clear: both;
+max-width: 75rem;
+height: 0;
+margin: 1.25rem auto;
+border-top: 0;
+border-right: 0;
+border-bottom: 1px solid;
+border-left: 0;
+}
+.redes {
+width: 150px;
+float: right;
+padding-right: 0;
+padding-left: 0;
+position: absolute;
+top: 70%;
+left: 80%;
+}
+
+ul#redessociales {
+margin-left: 0;
+}
+
+ul#redessociales li {
+display: block;
+float: right;
+padding: 10px 10px 0px 0px;
+margin-right: 0px;
+
+}
+
+ul#redessociales span {
+font-size: 20px
+}
+
+ul#redessociales a {
+color: white;
+border: 2px solid white; 
+border-radius: 50%;
+width: 35px; 
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+text-decoration: none;
+font-size: 24px;
+transition: background-color 0.3s;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+.hrfooter{
+
+background-color: #ffff; 
+  height: 2px; 
+  border: none;
+}
+
+.principal{
+   min-width: 100%;
+  height: 1220px;
+  background: url('https://www.humanidades.unach.mx/images/humanidades/IMG_7940.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: -25px;
+  left: 0px;
+  overflow: hidden;
+}
+.buscar {
+  background-color: #18386B;
+  color: white;
+}
+.btn-modal{   
+  display: inline-block;  
+  color: #ffffff;
+  background-color: #D2A92D;
+  border-bottom: 7px solid #18386B;
+  text-transform: uppercase;
+  padding-top: 10px;
+ }
+ 
+ .modal-header{
+  color: #18386B;
+  background-color: #D2A92D;
+ }
+
+@media (max-width: 768px){
+
+footer {
+background-color: #18386B;
+height: 400px;
+position: relative;
+border-bottom: #D2A92D solid 18px;
+bottom: 0px;
+}
+
+.contenedor .menu-footer .nav-footer {
+      display: inline-block;
+      padding-left: 0px;
+      margin-top: 0px;
+      width: 100%;
+      padding-bottom: 23px;
+  }
+
+.contenedor .custom, .unach {
+  color: white;
+  font-size: 14px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.logo-footer {
+width: 75%;
+height: 60px;
+float: left;
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-65%, -88%);
+text-align: center;
+padding-top: 26px;
+/* padding-bottom: 89px; */
+  }
+.hrfooter{
+margin-top: 88px; 
+background-color: #ffff; 
+  height: 2px; 
+  border: none;
+}
+.vstats_numbervaright{
+display: flex;
+position: absolute;
+transform: translate(-114%, -30%);
+}
+.redes{
+display: flex;
+position: absolute;
+transform: translate(-40%, 121%);
+}
+
+.menu_footer li {
+display: inline;
+  padding-right: 15px;
+}
+
+
+.vstats_counter{
+  background-color: white;
+  display: block;
+  float: right;
+  position: absolute;
+  top: 74%;
+  left: 72%;
+  
+  }
+  }
